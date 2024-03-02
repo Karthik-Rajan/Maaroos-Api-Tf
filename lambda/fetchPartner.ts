@@ -1,8 +1,7 @@
-import { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from "aws-lambda";
 import { Op, Vendor, sequelize } from "../models";
 import { response } from "../utils/helper";
 
-export const handler = async (event: APIGatewayProxyEventV2, context: any) => {
+export const handler = async (event: any, context: any) => {
   let body: any = event.body;
   let { rating_avg, distance, is_veg, lat, lng, limit } = JSON.parse(body);
 

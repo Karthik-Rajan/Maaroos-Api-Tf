@@ -1,4 +1,3 @@
-import { APIGatewayProxyEventV2 } from "aws-lambda";
 import { Vendor, Review, User } from "../models";
 import { response } from "../utils/helper";
 import { Sequelize } from "sequelize";

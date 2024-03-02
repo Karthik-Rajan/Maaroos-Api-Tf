@@ -1,4 +1,4 @@
-import { User } from "../models";
+import { User } from "../models/index";
 import { response } from "../utils/helper";
 
 export const handler = async (event: any, context: any) => {
